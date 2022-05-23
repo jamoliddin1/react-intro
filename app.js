@@ -1,3 +1,6 @@
+import React from "react";
+import { render } from "react-dom";
+
 const carComponent = (propers) => {
   return React.createElement("div", {}, [
     React.createElement("h1", {}, propers.name),
@@ -36,4 +39,4 @@ const AppReact = () => {
 // Producing car from a factory (poping it out )
 const producingByOne = React.createElement(AppReact);
 
-ReactDOM.render(producingByOne, document.getElementById("root"));
+render(producingByOne, document.getElementById("root"));
